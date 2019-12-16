@@ -31,75 +31,84 @@ namespace WpfApp
             {
                 new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Choose incorrect statement about program execution on modern computers: ",
+                    FirstAnswer = "All program data is stored in binary form ",
+                    SecondAnswer = "User applications don't need any additional software components and can be executed directly on the hardware ",
+                    ThirdAnswer = "Program logic is stored in the same memory as the program data ",
+                    CorrectAnswer = 2,
+                    Topic = "Introduction"
                 },
                 new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSLS:KFJ",
-                    SecondAnswer = "adDLSDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Python is a ... language : ",
+                    FirstAnswer = "general purpose ",
+                    SecondAnswer = "specific purpose ",
+                    ThirdAnswer = "low level ",
+                    CorrectAnswer = 1,
+                    Topic = "Introduction"
                 },
                 new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
-                    SecondAnswer = "adDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Which of the following statement evaluates to True if a variable called number is outside of the interval [-10;10]? ",
+                    FirstAnswer = "number < 10 and number > -10 ",
+                    SecondAnswer = "not (number < -10 or number > 10) ",
+                    ThirdAnswer = "not (number >= -10 and number <= 10) ",
+                    CorrectAnswer = 3,
+                    Topic = "Boolean expressions "
                 },
                 new Question
                 {
-                    Text = "BLbllDLSDLSbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
-                    CorrectAnswer = 2
+                    Text = "result = x ??? y . x and y are both integers. With which of the following operators put instead of ??? the result variable gets a value of a different type (not int)? ",
+                    FirstAnswer = "+",
+                    SecondAnswer = ">",
+                    ThirdAnswer = "**",
+                    CorrectAnswer = 2,
+                    Topic ="Variables "
                 },
                 new Question
                 {
-                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Which statement  is incorrect regarding the if-elif-else blocks in Python? ",
+                    FirstAnswer = "The if line finishes with a colon (:) ",
+                    SecondAnswer = "The else line finishes with a colon (:) ",
+                    ThirdAnswer = "The else clause is obligatory ",
+                    CorrectAnswer = 3,
+                    Topic = "Loops"
                 },
                 new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSLS:KFJ",
-                    SecondAnswer = "adDLSDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Which of the following statements about the while loop is incorrect? ",
+                    FirstAnswer = "In Python it can be used as both a pre-condition and a post-condition loop ",
+                    SecondAnswer = "The inner block (after the first line) has to be always indented ",
+                    ThirdAnswer = "Its body is always executed at least once ",
+                    CorrectAnswer = 3,
+                    Topic = "Loops"
                 },
                 new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
-                    SecondAnswer = "adDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Which of the following statement is correct regarding functions and their usage in Python ",
+                    FirstAnswer = "A function is defined only once but can be called multiple times ",
+                    SecondAnswer = "For each call of the same function there has to be a separate function definition ",
+                    ThirdAnswer = "A function can have only one parameter ",
+                    CorrectAnswer = 1,
+                    Topic = "Functions"
                 },
                 new Question
                 {
-                    Text = "BLbllDLSDLSbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
-                    CorrectAnswer = 2
+                    Text = "Which statement is incorrect about the Python list type? ",
+                    FirstAnswer = "It can store values of mixed types ",
+                    SecondAnswer = "It is efficient for all possible operations on its data ",
+                    ThirdAnswer = "It resizes itself automatically as values are added or removed ",
+                    CorrectAnswer = 2,
+                    Topic = "Collections"
                 },
                 new Question
                 {
-                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Which of the data structures aims at the efficient implementation of two operations at the same time: 1. Get the element with the highest priority 2. Add a new item",
+                    FirstAnswer = "list",
+                    SecondAnswer = "binary heap",
+                    ThirdAnswer = "set",
+                    CorrectAnswer = 2,
+                    Topic = "Collections"
                 },
                 new Question
                 {

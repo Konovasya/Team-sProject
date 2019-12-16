@@ -101,9 +101,26 @@
                 <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right">Finish</TextBlock>
             </Grid>
         </Border>
-        <Border x:Name="MiddlePython" Grid.Row="10" />
-        <Border x:Name="FinishPython" />
-        <Border x:Name="MiddleCSharp" Grid.Column="10" />
+        <Border x:Name="MiddlePython" Grid.Row="10" >
+            <Grid>
+                <TextBlock VerticalAlignment="Center">MIDTERM</TextBlock>
+                <TextBlock VerticalAlignment="Bottom">Phyton</TextBlock>
+
+            </Grid>
+        </Border>
+
+        <Border x:Name="FinishPython">
+            <Grid Background="White">
+                <TextBlock VerticalAlignment="Center">Phyton EXAM</TextBlock>
+            </Grid>
+        </Border>
+        <Border x:Name="MiddleCSharp" Grid.Column="10">
+            <Grid>
+                <TextBlock VerticalAlignment="Center">MIDTERM</TextBlock>
+                <TextBlock VerticalAlignment="Bottom">C#</TextBlock>
+
+            </Grid>
+        </Border>
 
         <Border x:Name="QuizBorder1" Grid.Row="10" Grid.Column="9">
             <TextBlock Style="{StaticResource BottomRotate}" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -240,52 +257,48 @@
                 QUIZ 27
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder28" Grid.Row="9" Grid.Column="0">
+        <Border x:Name="QuizBorder28" Grid.Row="1" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 28
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder29" Grid.Row="9" Grid.Column="0">
+        <Border x:Name="QuizBorder29" Grid.Row="2" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 29
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder30" Grid.Row="8" Grid.Column="0">
+        <Border x:Name="QuizBorder30" Grid.Row="3" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 30
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder12" Grid.Row="7" Grid.Column="0">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
-                QUIZ 12
-            </TextBlock>
-        </Border>
-        <Border x:Name="QuizBorder31" Grid.Row="6" Grid.Column="0">
+
+        <Border x:Name="QuizBorder31" Grid.Row="4" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 31
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder32" Grid.Row="5" Grid.Column="0">
+        <Border x:Name="QuizBorder32" Grid.Row="5" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 32
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder33" Grid.Row="4" Grid.Column="0">
+        <Border x:Name="QuizBorder33" Grid.Row="6" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 33
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder34" Grid.Row="3" Grid.Column="0">
+        <Border x:Name="QuizBorder34" Grid.Row="7" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 34
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder35" Grid.Row="2" Grid.Column="0">
+        <Border x:Name="QuizBorder35" Grid.Row="8" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 35
             </TextBlock>
         </Border>
-        <Border x:Name="QuizBorder36" Grid.Row="1" Grid.Column="10">
+        <Border x:Name="QuizBorder36" Grid.Row="9" Grid.Column="10">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                 QUIZ 36
             </TextBlock>
