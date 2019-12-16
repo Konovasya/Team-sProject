@@ -101,6 +101,78 @@ namespace WpfApp
                     ThirdAnswer = "adf DLS:KFJ",
                     CorrectAnswer = 2
                 },
+                new Question
+                {
+                    Text = "BLbllbls",
+                    FirstAnswer = "adf DLS:KFJ",
+                    SecondAnswer = "adf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbls",
+                    FirstAnswer = "adf DDLSLS:KFJ",
+                    SecondAnswer = "adDLSDLSf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbls",
+                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
+                    SecondAnswer = "adDLSf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllDLSDLSbls",
+                    FirstAnswer = "adf DLS:KFJ",
+                    SecondAnswer = "adf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
+                    FirstAnswer = "adf DLS:KFJ",
+                    SecondAnswer = "adf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbls",
+                    FirstAnswer = "adf DDLSLS:KFJ",
+                    SecondAnswer = "adDLSDLSf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbls",
+                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
+                    SecondAnswer = "adDLSf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllDLSDLSbls",
+                    FirstAnswer = "adf DLS:KFJ",
+                    SecondAnswer = "adf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
+                    CorrectAnswer = 2
+                },
+                new Question
+                {
+                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
+                    FirstAnswer = "adf DLS:KFJ",
+                    SecondAnswer = "adf DLS:KFJ",
+                    ThirdAnswer = "adf DLS:KFJ",
+                    CorrectAnswer = 2
+                },
             };
 
             Items = new List<Border>
@@ -114,6 +186,15 @@ namespace WpfApp
                 QuizBorder7,
                 QuizBorder8,
                 QuizBorder9,
+                QuizBorder10,
+                QuizBorder11,
+                QuizBorder12,
+                QuizBorder13,
+                QuizBorder14,
+                QuizBorder15,
+                QuizBorder16,
+                QuizBorder17,
+                QuizBorder18,
             };
         }
 
@@ -147,7 +228,7 @@ namespace WpfApp
             Items[CurrentIndex].Style = null;
             CurrentIndex = index;
 
-            QuizTitle.Text = $"QUIZ #{index + 1}";
+            QuizTitle.Text = $"QUIZ #{index + 1}. Topic: #{Questions[index].Topic}";
 
             var current = Questions[index];
             QuestionBlock.Text = current.Text;

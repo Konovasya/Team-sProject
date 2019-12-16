@@ -150,6 +150,51 @@
                 QUIZ 9
             </TextBlock>
         </Border>
+        <Border x:Name="QuizBorder10" Grid.Row="9" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 10
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder11" Grid.Row="8" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 11
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder12" Grid.Row="7" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 12
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder13" Grid.Row="6" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 13
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder14" Grid.Row="5" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 14
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder15" Grid.Row="4" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 15
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder16" Grid.Row="3" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 16
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder17" Grid.Row="2" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 17
+            </TextBlock>
+        </Border>
+        <Border x:Name="QuizBorder18" Grid.Row="1" Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                QUIZ 18
+            </TextBlock>
+        </Border>
 
     </Grid>
 </Window>

@@ -18,5 +18,7 @@ namespace WpfApp
 
         public int CorrectAnswer { get; set; }
 
+        public string Topic { get; set; }
+
     }
 }
