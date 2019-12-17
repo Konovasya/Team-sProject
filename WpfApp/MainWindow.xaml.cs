@@ -103,85 +103,87 @@ namespace WpfApp
                 },
                 new Question
                 {
-                    Text = "Which of the data structures aims at the efficient implementation of two operations at the same time: 1. Get the element with the highest priority 2. Add a new item",
-                    FirstAnswer = "list",
-                    SecondAnswer = "binary heap",
-                    ThirdAnswer = "set",
+                    Text = "How can list mutability be proved? ",
+                    FirstAnswer = "Calling append, remove or pop changes the original list ",
+                    SecondAnswer = "It is possible to get an element by its index ",
+                    ThirdAnswer = "Most of the list functions accept at least one parameter ",
+                    CorrectAnswer = 1,
+                    Topic = "Mutability"
+                },
+                 new Question
+                {
+                    Text = "Mutability of objects in programming means: ",
+                    FirstAnswer = "Ability to change contents of an object in-place ",
+                    SecondAnswer = "Ability to change the type of a variable ",
+                    ThirdAnswer = "Ability to return a value from a function ",
+                    CorrectAnswer = 1,
+                    Topic = "Mutability"
+                },
+                  new Question
+                {
+                    Text = "Which statement is correct about the Python list type? ",
+                    FirstAnswer = "It is an immutable type ",
+                    SecondAnswer = "It can store values of mixed types ",
+                    ThirdAnswer = "It is efficient for all possible operations on its data ",
                     CorrectAnswer = 2,
-                    Topic = "Collections"
+                    Topic = "Lists"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "What is the main disadvantage of a set? ",
+                    FirstAnswer = "Slow item insertion ",
+                    SecondAnswer = "Slow item removal   ",
+                    ThirdAnswer = "Absence of indexing ",
+                    CorrectAnswer = 1,
+                    Topic = "Sets"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSLS:KFJ",
-                    SecondAnswer = "adDLSDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "What is the complexity of finding the minimum value of a square nxn matrix? ",
+                    FirstAnswer = "O(logn) ",
+                    SecondAnswer = "O(n) ",
+                    ThirdAnswer = "O(n^2) ",
+                    CorrectAnswer = 3,
+                    Topic = "Sorting algorithms"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
-                    SecondAnswer = "adDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "Amortized complexity of an algorithm is:",
+                    FirstAnswer = "Complexity taking the worst-case scenario",
+                    SecondAnswer = "Complexity averaged over a series of operations ",
+                    ThirdAnswer = "Complexity taking the average between the best and worst case scenarios ",
+                    CorrectAnswer = 2,
+                    Topic = "Amortized complexity"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllDLSDLSbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
-                    CorrectAnswer = 2
+                    Text = "Which of the following is NOT true regarding a text file (from the programmatic point of view)?",
+                    FirstAnswer = "It can be opened with any text editor that supports the given encoding ",
+                    SecondAnswer = "It contains codes of symbols in a certain encoding ",
+                    ThirdAnswer = "It always has the .txt extension ",
+                    CorrectAnswer = 3,
+                    Topic = "Files"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "What is the purpose of the with block in Python file input-output? "with open('data.txt', 'r' ) as f:",
+                    FirstAnswer = "It ensures that the file is always closed at the end ",
+                    SecondAnswer = "It catches all possible errors of file IO (missing file, incorrect format, etc.) ",
+                    ThirdAnswer = "It improves performance of file input-output ",
+                    CorrectAnswer = 1,
+                    Topic = "Files"
                 },
-                new Question
+                  new Question
                 {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSLS:KFJ",
-                    SecondAnswer = "adDLSDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
+                    Text = "What is common among the following file formats: CSV, JSON, XML? "
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
                 },
-                new Question
-                {
-                    Text = "BLbllbls",
-                    FirstAnswer = "adf DDLSDLSDLSLS:KFJ",
-                    SecondAnswer = "adDLSf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
-                },
-                new Question
-                {
-                    Text = "BLbllDLSDLSbls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFDLSDLSDLSDLSJ",
-                    CorrectAnswer = 2
-                },
-                new Question
-                {
-                    Text = "BLbllbDLS DLSDLS bDLSDLSDLS ls",
-                    FirstAnswer = "adf DLS:KFJ",
-                    SecondAnswer = "adf DLS:KFJ",
-                    ThirdAnswer = "adf DLS:KFJ",
-                    CorrectAnswer = 2
-                },
+
+
             };
 
             Items = new List<Border>
