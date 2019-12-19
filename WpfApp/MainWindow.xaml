@@ -153,7 +153,7 @@
         </Border>
         <Border x:Name="QuizBorder7" Grid.Row="10" Grid.Column="3">
             <TextBlock Style="{StaticResource BottomRotate}" HorizontalAlignment="Center" VerticalAlignment="Center">
-                QUIZ 7
+                QUIZ 7 
             </TextBlock>
         </Border>
         <Border x:Name="QuizBorder8" Grid.Row="10" Grid.Column="2">
