@@ -182,6 +182,179 @@ namespace WpfApp
                     CorrectAnswer = 2,
                     Topic = "Files"
                 },
+                     //Questions in C#
+                
+                new Question
+                {
+                    Text = "What is the difference between ref and out parameters of C# methods?",
+                    FirstAnswer = "The ref parameter is passed by reference, out is passed by value ",
+                    SecondAnswer = "The ref parameter is passed by value, out is passed by reference",
+                    ThirdAnswer = "The out parameter has to be assigned within a method, the ref parameter can remain unchanged",
+                    CorrectAnswer = 3,
+                    Topic = "Parameters"
+                },
+                     new Question
+                {
+                    Text = "What is a namespace?",
+                    FirstAnswer = "A type that contains code of the program?",
+                    SecondAnswer = "A container for classes?",
+                    ThirdAnswer = "A deployable unit of an application?",
+                    CorrectAnswer = 2,
+                    Topic = "Fundamentals"
+                },
+                             new Question
+                {
+                    Text = "The type long in C# is equivalent to which type in .NET framework?",
+                    FirstAnswer = "Long",
+                    SecondAnswer = "Int32",
+                    ThirdAnswer = "Int64",
+                    CorrectAnswer = 3,
+                    Topic = "Primitive Types"
+                },
+                            new Question
+                {
+                    Text = "What is the correct way to declare an int array?",
+                    FirstAnswer = "int numbers = new int[];",
+                    SecondAnswer = "int[] numbers = new int[]; ",
+                    ThirdAnswer = "int[] numbers = new int[3]; ",
+                    CorrectAnswer = 3,
+                    Topic = "Non-primitive types"
+                },
+                            new Question
+                {
+                    Text = "How can we access the first element in this array “var numbers = new int[3] { 1, 2, 3 };”? ",
+                    FirstAnswer = "Numbers.First ",
+                    SecondAnswer = "Numbers(0) ",
+                    ThirdAnswer = "Numbers[0] ",
+                    CorrectAnswer = 3,
+                    Topic = "Non-primitive types"
+                },
+                            new Question
+                {
+                    Text = "The \n escape character in a string represents:",
+                    FirstAnswer = "A whitespace ",
+                    SecondAnswer = "A line-break ",
+                    ThirdAnswer = "A tab ",
+                    CorrectAnswer = 2,
+                    Topic = "Non-primitive types"
+                },
+                            new Question
+                {
+                    Text = "What is the correct syntax to declare a rectangular 3x5 array?",
+                    FirstAnswer = "var array = new int[3, 5]; ",
+                    SecondAnswer = "var array = new int[3][5]; ",
+                    ThirdAnswer = "var array = new int[](3, 5); ",
+                    CorrectAnswer = 1,
+                    Topic = "Arrays"
+                },
+                            new Question
+                {
+                    Text = "What is the difference between arrays and lists? ",
+                    FirstAnswer = "Arrays are faster than lists. ",
+                    SecondAnswer = "There is no difference. Both can be used to store a sequence of objects. ",
+                    ThirdAnswer = "Arrays are fixed in size, lists are dynamic. More items can be added later. ",
+                    CorrectAnswer = 3,
+                    Topic = "Arrays and lists "
+                },
+                            new Question
+                {
+                    Text = "How can access the last element in a list?",
+                    FirstAnswer = "list.Last ",
+                    SecondAnswer = "list.LastIndexOf() ",
+                    ThirdAnswer = "list[list.Count - 1] ",
+                    CorrectAnswer = 3,
+                    Topic = "Lists"
+                },
+                            new Question
+                {
+                    Text = "Which of the following can be stored on the stack only? ",
+                    FirstAnswer = "method return points ",
+                    SecondAnswer = "contents of value types ",
+                    ThirdAnswer = "content of objects ",
+                    CorrectAnswer = 1,
+                    Topic = "Stacks"
+                },
+                            new Question
+                {
+                    Text = "What is the disadvantage of a dictionary compared to a list? ",
+                    FirstAnswer = "No possibility of getting items by key ",
+                    SecondAnswer = "Slow item removal ",
+                    ThirdAnswer = "Absence of indexing ",
+                    CorrectAnswer = 3,
+                    Topic = "Collections"
+                },
+                            new Question
+                {
+                    Text = "How can we get the current date/time? ",
+                    FirstAnswer = "new DateTime() ",
+                    SecondAnswer = "DateTime.Now ",
+                    ThirdAnswer = "DateTime.Current ",
+                    CorrectAnswer = 2,
+                    Topic = "Dates"
+                },
+                            new Question
+                {
+                    Text = "Select the best way to create a TimeSpan object to represent 1 hour?",
+                    FirstAnswer = "DateTime.Now.AddHours(1) - DateTime.Now ",
+                    SecondAnswer = "new TimeSpan(1, 0, 0) ",
+                    ThirdAnswer = "TimeSpan.FromHours(1) ",
+                    CorrectAnswer = 3,
+                    Topic = "Dates and Times"
+                },
+                            new Question
+                {
+                    Text = "What is common between the string and the DateTime types in .NET?",
+                    FirstAnswer = "Both produce immutable objects",
+                    SecondAnswer = "Both are value types ",
+                    ThirdAnswer = "Both are reference types ",
+                    CorrectAnswer = 1,
+                    Topic = "DateTime and strings"
+                },
+                            new Question
+                {
+                    Text = "How can we delete a file in C#? ",
+                    FirstAnswer = "FileInfo.Delete(path); ",
+                    SecondAnswer = "File.Delete(path) ",
+                    ThirdAnswer = "new FileInfo().Delete(path) ",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                            new Question
+                {
+                    Text = "Which of the following is the default access specifier of a class member function? ",
+                    FirstAnswer = "FileInfo.Delete(path); ",
+                    SecondAnswer = "File.Delete(path) ",
+                    ThirdAnswer = "new FileInfo().Delete(path) ",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                            new Question
+                {
+                    Text = "Which of the following is the default access specifier of a class member function?",
+                    FirstAnswer = "Private ",
+                    SecondAnswer = "Public",
+                    ThirdAnswer = "Protected",
+                    CorrectAnswer = 1,
+                    Topic = "Access"
+                },
+                            new Question
+                {
+                    Text = "Which of the following is correct about nullable types in C#? ",
+                    FirstAnswer = "C# provides a special data types, the nullable types, to which you can assign normal range of values as well as null values ",
+                    SecondAnswer = "You can assign true, false, or null in a Nullable<bool> variable ",
+                    ThirdAnswer = "All of the above ",
+                    CorrectAnswer = 3,
+                    Topic = "Nullable types"
+                },
+                            new Question
+                {
+                    Text = "Which of the following cannot be used to declare an interface correctly? ",
+                    FirstAnswer = "Properties",
+                    SecondAnswer = "Methods",
+                    ThirdAnswer = "Structures",
+                    CorrectAnswer = 3,
+                    Topic = "Interfaces"
+                },
 
 
             };
