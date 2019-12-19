@@ -84,9 +84,9 @@
                     <TextBlock Grid.Row="1" x:Name="QuestionBlock" TextWrapping="wrapp"></TextBlock>
 
                     <StackPanel Grid.Row="2">
-                        <RadioButton x:Name="FirstAnswer" GroupName="Answer"></RadioButton>
-                        <RadioButton x:Name="SecondAnswer" GroupName="Answer"></RadioButton>
-                        <RadioButton x:Name="ThirdAnswer" GroupName="Answer"></RadioButton>
+                        <RadioButton x:Name="FirstAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
+                        <RadioButton x:Name="SecondAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
+                        <RadioButton x:Name="ThirdAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
                     </StackPanel>
 
                     <Button x:Name="AnswerButton" Grid.Row="3" Click="AnswerButton_Click">OK</Button>
