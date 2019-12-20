@@ -103,6 +103,15 @@ namespace WpfApp
                 },
                 new Question
                 {
+                    Text = "Which of the data structures aims at the efficient implementation of two operations at the same time: Get the element with the highest priority + Add a new item ",
+                    FirstAnswer = "list",
+                    SecondAnswer = "binary heap",
+                    ThirdAnswer = "set ",
+                    CorrectAnswer = 2,
+                    Topic = "Collections"
+                },
+                new Question
+                {
                     Text = "How can list mutability be proved? ",
                     FirstAnswer = "Calling append, remove or pop changes the original list ",
                     SecondAnswer = "It is possible to get an element by its index ",
@@ -182,6 +191,60 @@ namespace WpfApp
                     CorrectAnswer = 2,
                     Topic = "Files"
                 },
+                    new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                     new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                    new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                        new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                     new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
+                    new Question
+                {
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
+                    FirstAnswer = "They are binary formats",
+                    SecondAnswer = "They are text formats ",
+                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    CorrectAnswer = 2,
+                    Topic = "Files"
+                },
 
 
             };
@@ -204,11 +267,12 @@ namespace WpfApp
                 QuizBorder14,
                 QuizBorder15,
                 QuizBorder16,
-                QuizBorder17,
-                QuizBorder18,
+                QuizBorder17,                                                                                                                                                                                                                                                                                                                                         
                 QuizBorder19,
                 QuizBorder20,
-                QuizBorder21,
+                QuizBorder21,       
+                QuizBorder18,
+                QuizBorder19,
                 QuizBorder22,
                 QuizBorder23,
                 QuizBorder24,
@@ -239,7 +303,6 @@ namespace WpfApp
         {
             if (CurrentIndex == 8)
             {
-                CurrentIndex += 1;
                 StartPage.Visibility = Visibility.Collapsed;
                 QuizPage.Visibility = Visibility.Visible;
                 SetupQuiz(9);
@@ -247,9 +310,19 @@ namespace WpfApp
 
             else
             {
-                InitStart();
-
-                SetupQuiz(0);
+                if (CurrentIndex == 17)
+                {
+                    CurrentIndex += 1;
+                    StartPage.Visibility = Visibility.Collapsed;
+                    QuizPage.Visibility = Visibility.Visible;
+                    SetupQuiz(18);
+                }
+                else
+                {
+                    InitStart();
+                    SetupQuiz(0);
+                }
+                
             }
 
 
@@ -289,7 +362,7 @@ namespace WpfApp
         {
             Items[CurrentIndex].Style = null;
             if (CurrentIndex == 8)
-                StartTEST.Text = "Midterm Grade for Python";
+            StartTEST.Text = "Midterm Grade for Python";
             else
                 StartTEST.Text = "Midterm Grade for C#";
             if (points > 7)
@@ -300,10 +373,28 @@ namespace WpfApp
                 StartContent.Text = $"Of course it's OK, but let's try harder! You have {points} points. Succes: {points * 100 / 9} % ";
             else
                 StartContent.Text = $"Try harder otherwise you'll get ICRC! You have {points} points. Succes: {points * 100 / 9} % ";
-          
             StartButton.Content = "Continue";
             StartPage.Visibility = Visibility.Visible;
             QuizPage.Visibility = Visibility.Collapsed;
+        }
+
+        private void ExamPython(int points)
+           {
+            Items[CurrentIndex].Style = null;
+            StartTEST.Text = "Python Exam";
+
+            if (points > 8)
+            {
+                StartContent.Text = $"Well Done! You have {points} points! Succes: {points * 100 / 9} % ";
+            }
+
+            else
+                StartContent.Text = $":( You have {points} points! Succes: {points * 100 / 9} % ";
+
+            StartButton.Content = "OK";
+            StartPage.Visibility = Visibility.Visible;
+            QuizPage.Visibility = Visibility.Collapsed;
+           
         }
 
         private void AnswerButton_Click(object sender, RoutedEventArgs e)
@@ -316,7 +407,7 @@ namespace WpfApp
             var current = Questions[CurrentIndex];
             if (answer == current.CorrectAnswer)
             {
-                if (CurrentIndex < 18)
+                if (CurrentIndex < 19)
                 {
                     _correctPython++;
                 }
@@ -332,7 +423,7 @@ namespace WpfApp
             }
             else if (CurrentIndex == 17)
             {
-                // todo: calc total python and go to total page or to start
+                ExamPython(_correctPython);
             }
             else if (CurrentIndex == 26)
             {

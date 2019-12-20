@@ -79,9 +79,9 @@
                         <RowDefinition Height="32"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" x:Name="QuizTitle"></TextBlock>
+                    <TextBlock Grid.Row="0" x:Name="QuizTitle" TextWrapping="Wrap"></TextBlock>
 
-                    <TextBlock Grid.Row="1" x:Name="QuestionBlock"></TextBlock>
+                    <TextBlock Grid.Row="1" x:Name="QuestionBlock" TextWrapping="Wrap" ></TextBlock>
 
                     <StackPanel Grid.Row="2">
                         <RadioButton x:Name="FirstAnswer" GroupName="Answer"></RadioButton>
