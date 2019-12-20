@@ -66,9 +66,8 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="32"/>
                     </Grid.RowDefinitions>
-
-                    <TextBlock Grid.Row="0" HorizontalAlignment="Center">TEST</TextBlock>
-                    <TextBlock Grid.Row="1" HorizontalAlignment="Center">Content</TextBlock>
+                    <TextBlock x:Name="StartTEST" Grid.Row="0" HorizontalAlignment="Center">TEST</TextBlock>
+                    <TextBlock x:Name="StartContent" Grid.Row="1" HorizontalAlignment="Center">Content</TextBlock>
                     <Button x:Name="StartButton" Grid.Row="2" Click="StartButton_Click">START</Button>
                 </Grid>
 

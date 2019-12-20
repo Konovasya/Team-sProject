@@ -166,7 +166,7 @@ namespace WpfApp
                 },
                   new Question
                 {
-                    Text = "What is the purpose of the with block in Python file input-output? "with open('data.txt', 'r' ) as f:",
+                    Text = "What is the purpose of the with block in Python file input-output? with open('data.txt', 'r' ) as f:",
                     FirstAnswer = "It ensures that the file is always closed at the end ",
                     SecondAnswer = "It catches all possible errors of file IO (missing file, incorrect format, etc.) ",
                     ThirdAnswer = "It improves performance of file input-output ",
@@ -175,7 +175,7 @@ namespace WpfApp
                 },
                   new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML? "
+                    Text = "What is common among the following file formats: CSV, JSON, XML?",
                     FirstAnswer = "They are binary formats",
                     SecondAnswer = "They are text formats ",
                     ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
@@ -237,9 +237,22 @@ namespace WpfApp
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            InitStart();
+            if (CurrentIndex == 8)
+            {
+                CurrentIndex += 1;
+                StartPage.Visibility = Visibility.Collapsed;
+                QuizPage.Visibility = Visibility.Visible;
+                SetupQuiz(9);
+            }
 
-            SetupQuiz(0);
+            else
+            {
+                InitStart();
+
+                SetupQuiz(0);
+            }
+
+
         }
 
         private void InitStart()
@@ -257,7 +270,7 @@ namespace WpfApp
             Items[CurrentIndex].Style = null;
             CurrentIndex = index;
 
-            QuizTitle.Text = $"QUIZ #{index + 1}. Topic: #{Questions[index].Topic}";
+            QuizTitle.Text = $"QUIZ №{index + 1}. Topic: {Questions[index].Topic}";
 
             var current = Questions[index];
             QuestionBlock.Text = current.Text;
@@ -272,12 +285,33 @@ namespace WpfApp
             Items[index].Style = FindResource("Highlighted") as Style;
         }
 
+        private void MiddleGrade(int points)
+        {
+            Items[CurrentIndex].Style = null;
+            if (CurrentIndex == 8)
+                StartTEST.Text = "Midterm Grade for Python";
+            else
+                StartTEST.Text = "Midterm Grade for C#";
+            if (points > 7)
+                StartContent.Text = $"Well Done! You have {points} points! Succes: {points * 100 / 9} % ";
+            if (points == 6 | points == 7)
+                StartContent.Text = $"Good! You have {points} points. Succes: {points * 100 / 9} % ";
+            if (points == 4 | points == 5)
+                StartContent.Text = $"Of course it's OK, but let's try harder! You have {points} points. Succes: {points * 100 / 9} % ";
+            else
+                StartContent.Text = $"Try harder otherwise you'll get ICRC! You have {points} points. Succes: {points * 100 / 9} % ";
+          
+            StartButton.Content = "Continue";
+            StartPage.Visibility = Visibility.Visible;
+            QuizPage.Visibility = Visibility.Collapsed;
+        }
+
         private void AnswerButton_Click(object sender, RoutedEventArgs e)
         {
             var answer = GetSelectedAnswer();
 
             if (answer < 0)
-                return;
+                    return;
 
             var current = Questions[CurrentIndex];
             if (answer == current.CorrectAnswer)
@@ -294,7 +328,7 @@ namespace WpfApp
 
             if (CurrentIndex == 8)
             {
-                // todo: go to middle python page
+                MiddleGrade(_correctPython);
             }
             else if (CurrentIndex == 17)
             {
@@ -302,7 +336,7 @@ namespace WpfApp
             }
             else if (CurrentIndex == 26)
             {
-                // todo: go to middle c#
+                MiddleGrade(_correctCSharp);
             }
             else if (CurrentIndex == 35)
             {
