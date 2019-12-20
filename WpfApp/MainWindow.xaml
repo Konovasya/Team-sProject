@@ -79,14 +79,14 @@
                         <RowDefinition Height="32"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" x:Name="QuizTitle" TextWrapping="wrapp" ></TextBlock>
+                    <TextBlock Grid.Row="0" x:Name="QuizTitle" TextWrapping="wrap" ></TextBlock>
 
-                    <TextBlock Grid.Row="1" x:Name="QuestionBlock" TextWrapping="wrapp"></TextBlock>
+                    <TextBlock Grid.Row="1" x:Name="QuestionBlock" TextWrapping="wrap"></TextBlock>
 
-                    <StackPanel Grid.Row="2">
-                        <RadioButton x:Name="FirstAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
-                        <RadioButton x:Name="SecondAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
-                        <RadioButton x:Name="ThirdAnswer" GroupName="Answer" TextWrapping="wrapp"></RadioButton>
+                    <StackPanel Grid.Row="2" >
+                        <RadioButton x:Name="FirstAnswer" GroupName="Answer"></RadioButton>
+                        <RadioButton x:Name="SecondAnswer" GroupName="Answer" ></RadioButton>
+                        <RadioButton x:Name="ThirdAnswer" GroupName="Answer"></RadioButton>
                     </StackPanel>
 
                     <Button x:Name="AnswerButton" Grid.Row="3" Click="AnswerButton_Click">OK</Button>

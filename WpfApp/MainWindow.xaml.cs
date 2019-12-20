@@ -191,60 +191,168 @@ namespace WpfApp
                     CorrectAnswer = 2,
                     Topic = "Files"
                 },
-                    new Question
+                  new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "What is the difference between ref and out parameters of C# methods?",
+FirstAnswer = "The ref parameter is passed by reference, out is passed by value ",
+SecondAnswer = "The ref parameter is passed by value, out is passed by reference",
+ThirdAnswer = "The out parameter has to be assigned within a method, the ref parameter can remain unchanged",
+CorrectAnswer = 3,
+Topic = "Parameters"
                 },
-                     new Question
+                new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "What is a namespace?",
+FirstAnswer = "A type that contains code of the program?",
+SecondAnswer = "A container for classes?",
+ThirdAnswer = "A deployable unit of an application?",
+CorrectAnswer = 2,
+Topic = "Fundamentals"
                 },
-                    new Question
+                new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "The type long in C# is equivalent to which type in .NET framework?",
+FirstAnswer = "Long",
+SecondAnswer = "Int32",
+ThirdAnswer = "Int64",
+CorrectAnswer = 3,
+Topic = "Primitive Types"
                 },
-                        new Question
+                new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "What is the correct way to declare an int array?",
+FirstAnswer = "int numbers = new int[];",
+SecondAnswer = "int[] numbers = new int[]; ",
+ThirdAnswer = "int[] numbers = new int[3]; ",
+CorrectAnswer = 3,
+Topic = "Non-primitive types"
                 },
-                     new Question
+                new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "How can we access the first element in this array “var numbers = new int[3] { 1, 2, 3 };”? ",
+FirstAnswer = "Numbers.First ",
+SecondAnswer = "Numbers(0) ",
+ThirdAnswer = "Numbers[0] ",
+CorrectAnswer = 3,
+Topic = "Non-primitive types"
                 },
-                    new Question
+                new Question
                 {
-                    Text = "What is common among the following file formats: CSV, JSON, XML?",
-                    FirstAnswer = "They are binary formats",
-                    SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
-                    CorrectAnswer = 2,
-                    Topic = "Files"
+                    Text = "The escape character in a string represents:",
+FirstAnswer = "A whitespace ",
+SecondAnswer = "A line-break ",
+ThirdAnswer = "A tab ",
+CorrectAnswer = 2,
+Topic = "Non-primitive types"
                 },
+                new Question
+                {
+                    Text = "What is the correct syntax to declare a rectangular 3x5 array?",
+FirstAnswer = "var array = new int[3, 5]; ",
+SecondAnswer = "var array = new int[3][5]; ",
+ThirdAnswer = "var array = new int[](3, 5); ",
+CorrectAnswer = 1,
+Topic = "Arrays"
+                },
+                new Question
+                {
+                    Text = "What is the difference between arrays and lists? ",
+FirstAnswer = "Arrays are faster than lists. ",
+SecondAnswer = "There is no difference. Both can be used to store a sequence of objects. ",
+ThirdAnswer = "Arrays are fixed in size, lists are dynamic. More items can be added later. ",
+CorrectAnswer = 3,
+Topic = "Arrays and lists "
+                },
+                new Question
+                {
+                    Text = "How can access the last element in a list?",
+FirstAnswer = "list.Last ",
+SecondAnswer = "list.LastIndexOf() ",
+ThirdAnswer = "list[list.Count - 1] ",
+CorrectAnswer = 3,
+Topic = "Lists"
+                },
+                new Question
+                {
+                    Text = "Which of the following can be stored on the stack only? ",
+FirstAnswer = "method return points ",
+SecondAnswer = "contents of value types ",
+ThirdAnswer = "content of objects ",
+CorrectAnswer = 1,
+Topic = "Stacks"
+                },
+                 new Question
+                {
+                    Text = "What is the disadvantage of a dictionary compared to a list? ",
+FirstAnswer = "No possibility of getting items by key ",
+SecondAnswer = "Slow item removal ",
+ThirdAnswer = "Absence of indexing ",
+CorrectAnswer = 3,
+Topic = "Collections"
+                },
+                  new Question
+                {
+                    Text = "How can we get the current date/time? ",
+FirstAnswer = "new DateTime() ",
+SecondAnswer = "DateTime.Now ",
+ThirdAnswer = "DateTime.Current ",
+CorrectAnswer = 2,
+Topic = "Dates"
+                },
+                  new Question
+                {
+                    Text = "Select the best way to create a TimeSpan object to represent 1 hour?",
+FirstAnswer = "DateTime.Now.AddHours(1) - DateTime.Now ",
+SecondAnswer = "new TimeSpan(1, 0, 0) ",
+ThirdAnswer = "TimeSpan.FromHours(1) ",
+CorrectAnswer = 3,
+Topic = "Dates and Times"
+                },
+                  new Question
+                {
+                    Text = "What is common between the string and the DateTime types in .NET?",
+FirstAnswer = "Both produce immutable objects",
+SecondAnswer = "Both are value types ",
+ThirdAnswer = "Both are reference types ",
+CorrectAnswer = 1,
+Topic = "DateTime and strings"
+                },
+                  new Question
+                {
+                   Text = "How can we delete a file in C#? ",
+FirstAnswer = "FileInfo.Delete(path); ",
+SecondAnswer = "File.Delete(path) ",
+ThirdAnswer = "new FileInfo().Delete(path) ",
+CorrectAnswer = 2,
+Topic = "Files"
+                },
+                  new Question
+                {
+                    Text = "Which of the following is the default access specifier of a class member function?",
+FirstAnswer = "Private ",
+SecondAnswer = "Public",
+ThirdAnswer = "Protected",
+CorrectAnswer = 1,
+Topic = "Access"
+                },
+                  new Question
+                {
+                    Text = "Which of the following is correct about nullable types in C#? ",
+FirstAnswer = "C# provides a special data types, the nullable types, to which you can assign normal range of values as well as null values ",
+SecondAnswer = "You can assign true, false, or null in a Nullable<bool> variable ",
+ThirdAnswer = "All of the above ",
+CorrectAnswer = 3,
+Topic = "Nullable types"
+                },
+                  new Question
+                  {
+                      Text = "Which of the following cannot be used to declare an interface correctly? ",
+FirstAnswer = "Properties",
+SecondAnswer = "Methods",
+ThirdAnswer = "Structures",
+CorrectAnswer = 3,
+Topic = "Interfaces"
+                  }
 
 
             };
@@ -301,28 +409,33 @@ namespace WpfApp
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            if (CurrentIndex == 8)
+            if (CurrentIndex == 8 | CurrentIndex == 26)
             {
                 StartPage.Visibility = Visibility.Collapsed;
                 QuizPage.Visibility = Visibility.Visible;
-                SetupQuiz(9);
+                SetupQuiz(CurrentIndex + 1);
             }
 
-            else
+            if (CurrentIndex == 17)
             {
-                if (CurrentIndex == 17)
-                {
-                    CurrentIndex += 1;
-                    StartPage.Visibility = Visibility.Collapsed;
-                    QuizPage.Visibility = Visibility.Visible;
-                    SetupQuiz(18);
-                }
-                else
-                {
-                    InitStart();
-                    SetupQuiz(0);
-                }
-                
+                CurrentIndex += 1;
+                StartPage.Visibility = Visibility.Collapsed;
+                QuizPage.Visibility = Visibility.Visible;
+                SetupQuiz(18);
+            }
+            if (CurrentIndex == 100)
+            {
+                _correctCSharp = 0;
+                CurrentIndex = 18;
+                StartPage.Visibility = Visibility.Collapsed;
+                QuizPage.Visibility = Visibility.Visible;
+                SetupQuiz(18);
+            }
+
+            if (CurrentIndex == 0)
+            {
+                InitStart();
+                SetupQuiz(0); 
             }
 
 
@@ -365,13 +478,13 @@ namespace WpfApp
             StartTEST.Text = "Midterm Grade for Python";
             else
                 StartTEST.Text = "Midterm Grade for C#";
-            if (points > 7)
+            if (points == 8 | points == 9)
                 StartContent.Text = $"Well Done! You have {points} points! Succes: {points * 100 / 9} % ";
             if (points == 6 | points == 7)
                 StartContent.Text = $"Good! You have {points} points. Succes: {points * 100 / 9} % ";
             if (points == 4 | points == 5)
                 StartContent.Text = $"Of course it's OK, but let's try harder! You have {points} points. Succes: {points * 100 / 9} % ";
-            else
+            if (points == 1 | points == 2 | points == 3 | points == 0)
                 StartContent.Text = $"Try harder otherwise you'll get ICRC! You have {points} points. Succes: {points * 100 / 9} % ";
             StartButton.Content = "Continue";
             StartPage.Visibility = Visibility.Visible;
@@ -385,16 +498,42 @@ namespace WpfApp
 
             if (points > 8)
             {
-                StartContent.Text = $"Well Done! You have {points} points! Succes: {points * 100 / 9} % ";
+                StartContent.Text = $"Congratulations! You've passed Pyton course with grade {points * 10 / 18} ";
             }
-
             else
-                StartContent.Text = $":( You have {points} points! Succes: {points * 100 / 9} % ";
+            {
+                CurrentIndex = 0;
+                StartContent.Text = $"GAME OVER. You get ICRC, try again! ";
+            }
 
             StartButton.Content = "OK";
             StartPage.Visibility = Visibility.Visible;
             QuizPage.Visibility = Visibility.Collapsed;
            
+        }
+
+        private void ExamCSharp(int _correctPython, int _correctCSharp)
+        {
+            Items[CurrentIndex].Style = null;
+            StartTEST.Text = "C# Exam";
+            int PythonGrade = _correctPython * 10 / 18;
+            int CSharpGrade = _correctCSharp * 10 / 18;
+            int TotalGrade = PythonGrade / 2 + CSharpGrade / 2;
+            if (TotalGrade>3)
+            {
+                StartContent.Text = $"Congratulations! You've passed C# course with grade {TotalGrade} ";
+                CurrentIndex = 0;  
+            }
+            else
+            {
+                CurrentIndex = 100;
+                StartContent.Text = $"GAME OVER. You get ICRC for C#, try again!";
+            }
+
+            StartButton.Content = "OK";
+            StartPage.Visibility = Visibility.Visible;
+            QuizPage.Visibility = Visibility.Collapsed;
+
         }
 
         private void AnswerButton_Click(object sender, RoutedEventArgs e)
@@ -431,7 +570,7 @@ namespace WpfApp
             }
             else if (CurrentIndex == 35)
             {
-                // todo: calc total c# and go to total page or to start
+                ExamCSharp(_correctPython, _correctCSharp);
             }
             else
             {
