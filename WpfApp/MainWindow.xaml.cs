@@ -375,12 +375,11 @@ Topic = "Interfaces"
                 QuizBorder14,
                 QuizBorder15,
                 QuizBorder16,
-                QuizBorder17,                                                                                                                                                                                                                                                                                                                                         
+                QuizBorder17,
+                QuizBorder18,
                 QuizBorder19,
                 QuizBorder20,
                 QuizBorder21,       
-                QuizBorder18,
-                QuizBorder19,
                 QuizBorder22,
                 QuizBorder23,
                 QuizBorder24,
@@ -413,15 +412,15 @@ Topic = "Interfaces"
             {
                 StartPage.Visibility = Visibility.Collapsed;
                 QuizPage.Visibility = Visibility.Visible;
-                SetupQuiz(CurrentIndex + 1);
+                CurrentIndex += 1;
+                SetupQuiz(CurrentIndex);
             }
 
             if (CurrentIndex == 17)
             {
-                CurrentIndex += 1;
                 StartPage.Visibility = Visibility.Collapsed;
                 QuizPage.Visibility = Visibility.Visible;
-                SetupQuiz(18);
+                SetupQuiz(CurrentIndex + 1);
             }
             if (CurrentIndex == 100)
             {
@@ -429,7 +428,7 @@ Topic = "Interfaces"
                 CurrentIndex = 18;
                 StartPage.Visibility = Visibility.Collapsed;
                 QuizPage.Visibility = Visibility.Visible;
-                SetupQuiz(18);
+                SetupQuiz(CurrentIndex);
             }
 
             if (CurrentIndex == 0)
@@ -467,7 +466,6 @@ Topic = "Interfaces"
             FirstAnswer.IsChecked = false;
             SecondAnswer.IsChecked = false;
             ThirdAnswer.IsChecked = false;
-
             Items[index].Style = FindResource("Highlighted") as Style;
         }
 
@@ -542,11 +540,10 @@ Topic = "Interfaces"
 
             if (answer < 0)
                     return;
-
             var current = Questions[CurrentIndex];
             if (answer == current.CorrectAnswer)
             {
-                if (CurrentIndex < 19)
+                if (CurrentIndex < 18)
                 {
                     _correctPython++;
                 }
@@ -555,7 +552,6 @@ Topic = "Interfaces"
                     _correctCSharp++;
                 }
             }
-
             if (CurrentIndex == 8)
             {
                 MiddleGrade(_correctPython);
