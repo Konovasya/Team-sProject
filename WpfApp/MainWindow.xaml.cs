@@ -203,9 +203,9 @@ Topic = "Parameters"
                 new Question
                 {
                     Text = "What is a namespace?",
-FirstAnswer = "A type that contains code of the program?",
-SecondAnswer = "A container for classes?",
-ThirdAnswer = "A deployable unit of an application?",
+FirstAnswer = "A type that contains code of the program",
+SecondAnswer = "A container for classes",
+ThirdAnswer = "A deployable unit of an application",
 CorrectAnswer = 2,
 Topic = "Fundamentals"
                 },
@@ -519,16 +519,17 @@ Topic = "Interfaces"
             int TotalGrade = PythonGrade / 2 + CSharpGrade / 2;
             if (TotalGrade>3)
             {
-                StartContent.Text = $"Congratulations! You've passed C# course with grade {TotalGrade} ";
-                CurrentIndex = 0;  
+                StartContent.Text = $"Congratulations! You've passed Programming course with grade {TotalGrade} ";
+                StartButton.Content = "Try again";
+                CurrentIndex = 0;
             }
             else
             {
                 CurrentIndex = 100;
                 StartContent.Text = $"GAME OVER. You get ICRC for C#, try again!";
+                StartButton.Content = "OK";
             }
 
-            StartButton.Content = "OK";
             StartPage.Visibility = Visibility.Visible;
             QuizPage.Visibility = Visibility.Collapsed;
 
