@@ -66,8 +66,17 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="32"/>
                     </Grid.RowDefinitions>
-                    <TextBlock x:Name="StartTEST" Grid.Row="0" HorizontalAlignment="Center">TEST</TextBlock>
-                    <TextBlock x:Name="StartContent" Grid.Row="1" HorizontalAlignment="Center">Content</TextBlock>
+                    <TextBlock x:Name="StartTEST" Grid.Row="0" HorizontalAlignment="Center" FontSize="20">Welcome to Programming Quiz!</TextBlock>
+                    <TextBlock x:Name="StartContent" Grid.Row="1" HorizontalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" FontSize="14" LineHeight="Auto" TextAlignment="Center">This game is aimed to check student’s knowledge of programming theory.
+
+There are two blocks (Python, C#) and three types of spaces (Quiz, Midterm grade and Exam).
+On quiz space you have to answer question correctly.
+On Midterm program analyses your current success (percentage of correct answers).
+On Exam program calculates your grade and decides whether to skip you further or to give you ICRC.
+If you want to pass the course you have to score at least 40% points. Total grade is calculated using formula: 0,5*PythonGrade + 0,5*CSarhpGrade.
+
+Good luck!
+                    </TextBlock>
                     <Button x:Name="StartButton" Grid.Row="2" Click="StartButton_Click">START</Button>
                 </Grid>
 

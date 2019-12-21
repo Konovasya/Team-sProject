@@ -33,7 +33,7 @@ namespace WpfApp
                 {
                     Text = "Choose incorrect statement about program execution on modern computers: ",
                     FirstAnswer = "All program data is stored in binary form ",
-                    SecondAnswer = "User applications don't need any additional software components and can be executed directly on the hardware ",
+                    SecondAnswer = "User applications can be executed directly on the hardware ",
                     ThirdAnswer = "Program logic is stored in the same memory as the program data ",
                     CorrectAnswer = 2,
                     Topic = "Introduction"
@@ -85,9 +85,9 @@ namespace WpfApp
                 },
                 new Question
                 {
-                    Text = "Which of the following statement is correct regarding functions and their usage in Python ",
+                    Text = "Which of the following statement is correct regarding functions and their usage in Python? ",
                     FirstAnswer = "A function is defined only once but can be called multiple times ",
-                    SecondAnswer = "For each call of the same function there has to be a separate function definition ",
+                    SecondAnswer = "For each call of the same function has to be a separate function definition ",
                     ThirdAnswer = "A function can have only one parameter ",
                     CorrectAnswer = 1,
                     Topic = "Functions"
@@ -103,7 +103,7 @@ namespace WpfApp
                 },
                 new Question
                 {
-                    Text = "Which of the data structures aims at the efficient implementation of two operations at the same time: Get the element with the highest priority + Add a new item ",
+                    Text = "Which of data structures aims at efficient implementation of 2 operations at the same time: Get the element with the highest priority + Add new item ",
                     FirstAnswer = "list",
                     SecondAnswer = "binary heap",
                     ThirdAnswer = "set ",
@@ -187,7 +187,7 @@ namespace WpfApp
                     Text = "What is common among the following file formats: CSV, JSON, XML?",
                     FirstAnswer = "They are binary formats",
                     SecondAnswer = "They are text formats ",
-                    ThirdAnswer = "They are human-oriented formats with both information and its presentation details",
+                    ThirdAnswer = "They are human-oriented formats with information \n and presentation details",
                     CorrectAnswer = 2,
                     Topic = "Files"
                 },
@@ -196,7 +196,7 @@ namespace WpfApp
                     Text = "What is the difference between ref and out parameters of C# methods?",
 FirstAnswer = "The ref parameter is passed by reference, out is passed by value ",
 SecondAnswer = "The ref parameter is passed by value, out is passed by reference",
-ThirdAnswer = "The out parameter has to be assigned within a method, the ref parameter can remain unchanged",
+ThirdAnswer = "The out parameter has to be assigned within a method, \n the ref parameter can remain unchanged",
 CorrectAnswer = 3,
 Topic = "Parameters"
                 },
@@ -229,7 +229,7 @@ Topic = "Non-primitive types"
                 },
                 new Question
                 {
-                    Text = "How can we access the first element in this array “var numbers = new int[3] { 1, 2, 3 };”? ",
+                    Text = "How can we access the first element in this array \n “var numbers = new int[3] { 1, 2, 3 };”? ",
 FirstAnswer = "Numbers.First ",
 SecondAnswer = "Numbers(0) ",
 ThirdAnswer = "Numbers[0] ",
@@ -338,7 +338,7 @@ Topic = "Access"
                   new Question
                 {
                     Text = "Which of the following is correct about nullable types in C#? ",
-FirstAnswer = "C# provides a special data types, the nullable types, to which you can assign normal range of values as well as null values ",
+FirstAnswer = "C# provides a special data types, the nullable types, \n to which you can assign normal range of values as well as null values ",
 SecondAnswer = "You can assign true, false, or null in a Nullable<bool> variable ",
 ThirdAnswer = "All of the above ",
 CorrectAnswer = 3,
